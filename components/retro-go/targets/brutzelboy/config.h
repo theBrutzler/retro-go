@@ -48,7 +48,7 @@
 
 // Input
 // Refer to rg_input.h to see all available RG_KEY_* and RG_GAMEPAD_*_MAP types
-#define RG_GAMEPAD_ADC_MAP_FILTER_WINDOW 150 // this is a filter value, to be sure, the adc is in stable situation (not falling or rizing)
+#define RG_GAMEPAD_ADC_MAP_FILTER_WINDOW 200 // this is a filter value, to be sure, the adc is in stable situation (not falling or rizing)
 #define RG_GAMEPAD_ADC_MAP {\
     {RG_KEY_UP,    ADC_UNIT_1, ADC_CHANNEL_6, ADC_ATTEN_DB_11, 2000, 4096},\
     {RG_KEY_RIGHT, ADC_UNIT_1, ADC_CHANNEL_5, ADC_ATTEN_DB_11, 1500, 1900},\
@@ -68,8 +68,8 @@
 #define RG_BATTERY_DRIVER           1
 #define RG_BATTERY_ADC_UNIT         ADC_UNIT_1
 #define RG_BATTERY_ADC_CHANNEL      ADC_CHANNEL_3
-#define RG_BATTERY_CALC_PERCENT(raw) (((raw) * 2.f - 2700.f) / (2700.f - 2000.f) * 100.f)
-#define RG_BATTERY_CALC_VOLTAGE(raw) ((raw) * 2.f * 0.001f)
+#define RG_BATTERY_CALC_PERCENT(raw) (((raw) * 3.2f - 2000.f) / (2800.f - 2000.f) * 100.f)
+#define RG_BATTERY_CALC_VOLTAGE(raw) ((raw) * 3.2f * 0.001f)
 
 // Status LED
 #define RG_GPIO_LED                 GPIO_NUM_38
