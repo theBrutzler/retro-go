@@ -33,16 +33,16 @@
 #endif
 
 #ifndef RG_PROJECT_NAME
-#define RG_PROJECT_NAME "Retro-Go"
+#define RG_PROJECT_NAME "brutzelboy"
 #endif
 
 #ifndef RG_PROJECT_WEBSITE
-#define RG_PROJECT_WEBSITE "https://github.com/ducalex/retro-go"
+#define RG_PROJECT_WEBSITE "https://github.com/thebrutzler/retro-go"
 #endif
 
 #ifndef RG_PROJECT_CREDITS
 #define RG_PROJECT_CREDITS \
-    "Retro-Go: ducalex\n"
+    "Retro-Go: thebrutzler\n"
     // TODO: Decide which additional credits should be included here?
     // Maybe the main author for each emulator? Or should that credit be only when seeing `about` inside said app?
     // What about libraries and fonts (lodepng, etc)?
@@ -87,7 +87,7 @@
 // #define RG_UPDATER_DOWNLOAD_LOCATION RG_STORAGE_ROOT "/odroid/firmware"
 
 #ifndef RG_UPDATER_GITHUB_RELEASES
-#define RG_UPDATER_GITHUB_RELEASES "https://api.github.com/repos/ducalex/retro-go/releases?per_page=10"
+#define RG_UPDATER_GITHUB_RELEASES "https://api.github.com/repos/thebrutzler/retro-go/releases?per_page=10"
 #endif
 
 #ifndef RG_PATH_MAX
